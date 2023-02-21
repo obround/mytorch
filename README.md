@@ -1,5 +1,5 @@
 # mytorch
-Easily extensible autograd implemented python with pytorch API.
+Easily extensible autograd implemented python with pytorch API. Uses numpy to do the heavy-lifting. It wouldn't be too tough to extend the autograd, implement `torch.nn`, and possibly run on GPU (presumably with CuPy or Numba). It would be an interesting (but useless) endeavor to rewrite `mytorch` in a low level language using BLAS library calls instead on numpy, just like pytorch.
 
 ## Examples
 `mytorch` supports the computation of arbitrarily high derivatives for both scalars and non-scalars. Both `torch.autograd.backward` and `torch.autograd.grad` are supported.
